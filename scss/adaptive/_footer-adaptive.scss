@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px){
+    .footer {
+        &_top {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &--right {
+                display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        &_bottom {
+            &--list {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
